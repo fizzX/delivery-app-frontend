@@ -2,7 +2,7 @@ extends template
 
 block content
     h1 Welcome to Crimson Delivery
-    form#login-form
+    form(style='text-align: center')
         h2 Sign up for HSA Dorm Supply Deliveries
         input(type='text' name='name' placeholder='Name') 
         br
@@ -12,8 +12,11 @@ block content
         br
         input(type='phone' name='phone' placeholder='Phone Number') 
         br
-
-        button(type='submit' onclick ="testSubmit()") Submit
+        input(type='text' name='phoneProvider' placeholder='Phone Provider') 
+        br
+        input(type='password' name='password' placeholder='*******') 
+        br
+        button(type='button' onclick ="register()") Register
 
 
 //- block postScript
